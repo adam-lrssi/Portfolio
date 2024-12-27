@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <script src="/assets/js/send_email.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Porfolio Adam Laroussi</title>
+</head>
+<body>
+    <!----------Header-------->
+    <header class="header">
+        <a href="#home" class="logo">Porfolio</a>
+
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#service">Service</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+
+
+        </nav>
+        <img src="/assets/images/menu-btn.png" alt="" class="menu-hamburger">
+
+        <script>
+            const menuHamburger = document.querySelector(".menu-hamburger")
+            const navLinks = document.querySelector(".navbar")
+
+            menuHamburger.addEventListener('click', ()=>{
+                navLinks.classList.toggle('mobile-menu')
+            })
+
+            // Ajoutez ce gestionnaire d'événements pour fermer le menu en cliquant à l'extérieur
+            document.addEventListener('click', (event) => {
+                // Vérifiez si le clic est en dehors du menu hamburger et des liens de navigation
+                if (!menuHamburger.contains(event.target) && !navLinks.contains(event.target)) {
+                    // Si le menu est ouvert, fermez-le
+                    if (navLinks.classList.contains('mobile-menu')) {
+                        navLinks.classList.remove('mobile-menu');
+                    }
+                }
+            });
+        </script>
+
+    </header>
+
+    <!---  Home design  --->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, Everyone</h3>
+            <h1>I'm Adam Laroussi</h1>
+            <h3>I'm a <span>Frontend Developer</span></h3>
+            <p>I'm an etudiant at IMIE Paris in Developement Web & Web Mobile <p>I'm ready to help you to develop your web site  with your requirements and my professionalism</p></p>
+            <div class="social-medias">
+                <a href="https://www.linkedin.com/in/adam-lrssi"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://wa.me/647158850"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/adam.lrssi/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <button class="btn" id="open-popup" onclick="openPopup()">Check my CV</button>
+        </div>
+
+        <div class="home-img">
+            <img src="/assets/images/Adam-laroussi.JPG">
+        </div>
+
+        <div class="pop-up-content">
+            <div class="popup" id="popup">
+                <div class="text">
+                    <h2 id="popupTitle">Here, you can download my CV</h2>
+                </div>    
+                <a href="/assets//images/cv.pdf" class="btn-cv" download>Télécharger mon CV</a>
+
+                
+                <button class="close_popup" type="button" onclick="closePopup()">Close</button>
+            </div>
+        </div>
+
+        <script> 
+            let popup = document.getElementById("popup");
+
+            function openPopup() {
+                const popup = document.getElementById('popup');
+                popup.classList.add("open-popup");   
+                document.addEventListener('click', outsideClickListener);
+            }
+
+            function closePopup() {
+                const popup = document.getElementById('popup');
+                popup.classList.remove("open-popup");
+                document.addEventListener('click', outsideClickListener);
+            }
+
+            function outsideClickListener(event) {
+                const popup = document.getElementById('popup');
+                // Vérifiez si le clic est en dehors du popup
+                if (!popup.contains(event.target) && event.target.id !== 'open-popup') {
+                    closePopup();
+                }
+            }
+        
+        </script>
+
+    </section>
+
+    <!---  About design  --->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="/assets/images/aboutme.JPG" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>I'm Adam Laroussi a Developer Web & Web Mobile. I study in Paris at IMIE Paris. <br>
+                I'm passionate about web development and I'm always looking for new challenges. <br>
+                I love help people to build web site for their business.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!--- Service Design --->
+
+    <section class="service" id="service">
+        <h2 class="heading-service">My <span>Services</span></h2>
+
+        <div class="service-container">
+            <div class="service-box wd">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>I offer customized web development services, tailored to your company's specific needs. 
+                    <br>My approach focuses on creating modern, responsive and aesthetically pleasing websites that not only attract attention,
+                    <br> but also offer a seamless user experience. 
+                    <br>I'm committed to delivering a high-quality product that meets your requirements and those of your customers.</p>
+            </div>
+
+            <div class="service-box">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Web Development Mobile</h3>
+                <p >Living in an increasingly mobile world, I also specialize in the development of websites optimized for mobile devices. 
+                    <br>I offer a range of services including the design and development of sites adapted to all screen sizes, for intuitive and optimal navigation. 
+                    <br>I ensure that your mobile site is not only functional, but also attractive, to maximize user engagement and enhance your brand's visibility in the digital marketplace.</p> 
+
+            </div>
+        </div>
+    </section>
+
+    <!--- Portfolio Design --->
+
+    <section class="portfolio" id="portfolio" >
+        <h2 class="heading-portfolio">My <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            
+            <div class="portfolio-box">
+                <img src="/assets/images/project1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>RentaLuxury Paris</h4>
+                    <p>For my first project, I created a site for a car rental company. 
+                        <br>The aim was both to display the company's vehicles and to enable customers to reserve a vehicle. 
+                        <br>There was also a space for clients to contact the agency by e-mail or via social networks.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--- Contact Design --->
+
+    <section class="contact" id="contact" style="height: 800px;">
+        <div class="heading-contact">
+            <h2>Contact <span>Me</span></h2>
+
+            <form action="https://api.web3forms.com/submit" method="post">
+                <input type="hidden" name="access_key" value="6de263ff-7905-4432-9535-bfa5562eafc3">
+                <div class="input-box">
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                </div>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send Message</button>
+
+                <!---Check bot --->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            </form>
+        </div>
+    </section>
+
+    <!---Footer Design --->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Adam Laroussi | All rights reserved.</p>
+        </div>
+
+        <div class="footer-icon-top">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+
+    </footer>
+
+</body>
+</html>
