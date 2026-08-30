@@ -8,11 +8,11 @@ Un portfolio de développeur interactif, animé et en 3D, conçu pour **capter l
 
 <br/>
 <div>
-  <img src="https://github.com/user-attachments/assets/4eaf9399-fd02-4a90-83f7-2b5a361bc032" alt="Hero" style="border-radius: 8px;"/>
+  <img alt="Hero" style="border-radius: 8px;" src="https://github.com/user-attachments/assets/e7599e96-bb85-4518-b7d3-8cc986e371f0" />
   <div style="display: flex; justify-content: space-between; margin: 20px 0;">
-    <img src="https://github.com/user-attachments/assets/155bf742-b24f-4119-89f4-87e6d88c8f53" alt="Works" style="width: 32%; border-radius: 8px;"/>
-    <img src="https://github.com/user-attachments/assets/f22b9749-85ed-434f-a5f6-df1f8e221103" alt="ContactSummary" style="width: 32%; border-radius: 8px;"/>
-    <img src="https://github.com/user-attachments/assets/3e473322-b96a-433b-aec5-ece9bab25795" alt="Contact" style="width: 32%; border-radius: 8px;"/>
+    <img alt="Projets" style="width: 32%; border-radius: 8px;" src="https://github.com/user-attachments/assets/b54af0b2-16c3-4a23-9094-8c45b7cf2b5f" />
+    <img alt="Citation" style="width: 32%; border-radius: 8px;" src="https://github.com/user-attachments/assets/9c7036e1-32f0-4123-a7f1-e224f8398f26" />
+    <img alt="Contact" style="width: 32%; border-radius: 8px;" src="https://github.com/user-attachments/assets/d93dc696-d9d9-45b5-9e00-15333127aa1c" />
   </div>
 </div>
 <br/>
