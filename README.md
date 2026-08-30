@@ -1,10 +1,10 @@
-# 🌐 3D Awwwards-Level Developer Portfolio
+# 🌐 Portfolio Développeur 3D Inspiré des Standards Awwwards
 
-### Built with React, GSAP, Three.js, TailwindCSS
+### Conçu avec React, GSAP, Three.js et Tailwind CSS
 
-This is a fully animated, interactive, 3D developer portfolio designed to **impress clients, recruiters, and hiring managers**. It's more than a portfolio—it's a web experience built with production-level code, scroll-based animations, and real-world best practices.
+Un portfolio de développeur interactif, animé et en 3D, conçu pour **capter l'attention des recruteurs, clients et équipes techniques**. Plus qu'une simple vitrine : une expérience web complète construite avec un code propre, des animations synchronisées au scroll et les meilleures pratiques modernes.
 
-> ⚡ Inspired by Awwwards-level sites — built with React (Vite), TailwindCSS, GSAP, React Three Fiber, and Drei.
+> ⚡ Inspiré des standards Awwwards — développé avec React (Vite), Tailwind CSS, GSAP, React Three Fiber et Drei.
 
 <br/>
 <div>
@@ -17,80 +17,44 @@ This is a fully animated, interactive, 3D developer portfolio designed to **impr
 </div>
 <br/>
 
-> 📺 [Watch Full YouTube Walkthrough](https://youtu.be/i0229UsdBwc)
----
-
-## 🚀 Tech Stack
-
-| Technology       | Description                             |
-| ---------------- | --------------------------------------- |
-| **React (Vite)** | Fast dev server and production bundling |
-| **Tailwind CSS** | Utility-first styling for components    |
-| **GSAP**         | Scroll-based animation and motion logic |
-| **Three.js**     | 3D scenes powered by React Three Fiber  |
-| **Drei**         | Useful helpers for 3D rendering         |
 
 ---
 
-## 📁 Features
+## 🚀 Stack Technique
 
-- 🔥 3D Hero Section with animated planet and golden ring
-- 🧩 Smooth slide-in Navbar with staggered link animations
-- 🎯 Scroll-triggered Service Summary with horizontal word motion
-- 🖼️ Works section with hover overlays and interactive previews
-- ✍️ About section with clip-path image reveal + typewriter text
-- 🏁 Marquee-based Contact Summary and CTA
-- 💼 Fully responsive and accessible on all screen sizes
+| Technologie | Description |
+| :--- | :--- |
+| **React (Vite)** | Environnement de développement ultra-rapide et bundling de production |
+| **Tailwind CSS** | Framework CSS utility-first pour le design des composants |
+| **GSAP** | Animations avancées et logique de défilement liée au scroll |
+| **Three.js** | Scènes et éléments 3D propulsés par React Three Fiber |
+| **Drei** | Collection d'helpers essentiels pour le rendu 3D |
 
 ---
 
-## 📦 Setup & Installation
+## 📁 Fonctionnalités Clés
+
+- 🔥 **Section Hero 3D** avec planète animée et anneau doré réactif
+- 🧩 **Barre de navigation fluide** avec animations échelonnées (stagger) à l'apparition
+- 🎯 **Section Services / Expertise** animée au défilement avec translation horizontale
+- 🖼️ **Section Projets (Works)** avec effets d'overlay au survol et prévisualisations interactives
+- ✍️ **Section À Propos** avec effet de révélation d'image (clip-path) et texte machine à écrire
+- 🏁 **Bandeau défilant (Marquee)** et appel à l'action percutant pour le contact
+- 💼 **Design 100 % responsive** et optimisé pour toutes les tailles d'écrans
+
+---
+
+## 📦 Installation & Démarrage
 
 ```bash
-git clone https://github.com/Ali-Sanati/awwwards-portfolio.git
+# Cloner le dépôt
+git clone [https://github.com/Ali-Sanati/awwwards-portfolio.git](https://github.com/Ali-Sanati/awwwards-portfolio.git)
+
+# Accéder au dossier
 cd awwwards-portfolio
+
+# Installer les dépendances
 npm install
+
+# Lancer le serveur local
 npm run dev
-```
-
-> Open http://localhost:5173 in your browser.
-
----
-
-## 🛠️ Customization Tips
-
-- Change text, images, and links in /constants/index.js
-
-- Update 3D models and scene in Hero.jsx
-
-- Add your own contact info in Contact.jsx
-
-- Adjust colors, fonts, and layout via tailwind.config.js
-
----
-
-## 🔗 Assets
-
-Assets used in the project can be found [here](https://github.com/user-attachments/files/19820923/public.zip)
-
----
-
-## 📣 Like the project?
-
-If this helped you build or inspire your own site:
-
-- ⭐ Star this repo
-
-- 📺 [Watch the full walkthrough on YouTube](https://youtu.be/i0229UsdBwc)
-
-- 📬 [Connect on LinkedIn](https://www.linkedin.com/in/ali-sanati)
-
-- 📷 [Follow me on Instagram](https://www.instagram.com/ali.sanatidev/reels/)
-
----
-
-## 🤝 Let’s Build Together
-
-Drop a comment on the video or open an issue with your idea!
-
-> 📩 Like, subscribe, and let me know what kind of project you want to build together!
