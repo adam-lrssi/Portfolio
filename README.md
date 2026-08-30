@@ -48,10 +48,10 @@ Un portfolio de développeur interactif, animé et en 3D, conçu pour **capter l
 
 ```bash
 # Cloner le dépôt
-git clone [https://github.com/Ali-Sanati/awwwards-portfolio.git](https://github.com/Ali-Sanati/awwwards-portfolio.git)
+git clone https://github.com/adam-lrssi/Portfolio.git
 
 # Accéder au dossier
-cd awwwards-portfolio
+cd Portfolio
 
 # Installer les dépendances
 npm install
